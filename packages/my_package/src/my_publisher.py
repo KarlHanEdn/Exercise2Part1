@@ -18,11 +18,11 @@ class MyPublisherNode(DTROS):
             self.pub.publish(message)
             rate.sleep()
 
-if __name__ == '__main__':
-    print(f'running on robot {os.environ["VEHICLE_NAME"]}')
-    node = MyPublisherNode('my_publisher_node')
-    node.run()
-    rospy.spin()
+# if __name__ == '__main__':
+#     print(f'running on robot {os.environ["VEHICLE_NAME"]}')
+#     node = MyPublisherNode('my_publisher_node')
+#     node.run()
+#     rospy.spin()
 
 
 
